@@ -1,4 +1,4 @@
-var url = "https://picsoung.typeform.com/to/AEUNRk83#utm_source=tf-embed-cookies" // NOTE: Replace with your typeform URL
+var url = "https://no-binary.typeform.com/AWKSPoll#utm_source=tf-embed-cookies" // NOTE: Replace with your typeform URL
 
 const embedElement = document.querySelector('.target-dom-node') // NOTE: `.target-dom-node` is the target DOM element from your website or web app
 
