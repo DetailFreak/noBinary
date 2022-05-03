@@ -1,5 +1,3 @@
-var url = "https://no-binary.typeform.com/AWKSPoll" // NOTE: Replace with your typeform URL
-
 const embedElement = document.querySelector('.target-dom-node') // NOTE: `.target-dom-node` is the target DOM element from your website or web app
 
 var displayed = getCookie("displayed_typeform"); //
@@ -11,14 +9,13 @@ if (displayed){
 }
 
 function showEmbed(){ // call this function to display the embed typeform
-  window.typeformEmbed.makeWidget(
-    embedElement,
-    url, 
-    {
-      hideHeaders: true,
-      hideFooter: true,
-    }
-  )
+  window.tf.createWidget('z8X7CXUJ', {
+        container: document.querySelector('.target-dom-node'),
+        transitiveSearchParams: ['foo', 'bar'],
+        medium: 'demo-test',
+        hidden: { foo: 'foo value', bar: 'bar value' },
+        iframeProps: { title: 'Vote Now!' },
+      })
 }
 
 // Cookie manipulation
