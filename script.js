@@ -1,10 +1,10 @@
-var url = "https://no-binary.typeform.com/AWKSPoll#utm_source=tf-embed-cookies" // NOTE: Replace with your typeform URL
+var url = "https://no-binary.typeform.com/AWKSPoll" // NOTE: Replace with your typeform URL
 
 const embedElement = document.querySelector('.target-dom-node') // NOTE: `.target-dom-node` is the target DOM element from your website or web app
 
 var displayed = getCookie("displayed_typeform"); //
 if (displayed){
-  embedElement.innerHTML="<h2>Typeform already displayed once.</h2>"
+  embedElement.innerHTML="<h2>Thanks for voting!</h2>"
 } else if(!displayed && displayed === "") {
   setCookie("displayed_typeform", true, 365);
   showEmbed();
