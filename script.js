@@ -1,4 +1,4 @@
-const embedElement = document.querySelector('.target-dom-node') // NOTE: `.target-dom-node` is the target DOM element from your website or web app
+const embedElement = document.getElementById('target-dom-node') // NOTE: `.target-dom-node` is the target DOM element from your website or web app
 
 var displayed = getCookie("displayed_typeform"); //
 if (displayed){
